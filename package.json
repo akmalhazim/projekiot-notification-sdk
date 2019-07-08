@@ -1,0 +1,19 @@
+{
+  "name": "projekiot-notification-sdk",
+  "version": "1.0.0",
+  "description": "ProjekIoT Internal Microservice Notification SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmalhazim24/projekiot-notification-sdk.git"
+  },
+  "author": "Akmal Hazim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmalhazim24/projekiot-notification-sdk/issues"
+  },
+  "homepage": "https://github.com/akmalhazim24/projekiot-notification-sdk#readme"
+}
