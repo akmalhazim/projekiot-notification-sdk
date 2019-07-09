@@ -1,6 +1,6 @@
 {
   "name": "projekiot-notification-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ProjekIoT Internal Microservice Notification SDK",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/akmalhazim24/projekiot-notification-sdk/issues"
   },
-  "homepage": "https://github.com/akmalhazim24/projekiot-notification-sdk#readme"
+  "homepage": "https://github.com/akmalhazim24/projekiot-notification-sdk#readme",
+  "dependencies": {
+    "amqplib": "^0.5.3"
+  }
 }
