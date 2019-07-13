@@ -1,6 +1,6 @@
 {
   "name": "projekiot-notification-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ProjekIoT Internal Microservice Notification SDK",
   "main": "index.js",
   "scripts": {

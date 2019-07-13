@@ -7,8 +7,12 @@ tryAmqp();
  	const conn = await require('amqplib').connect('amqp://localhost');
  	const ch = await conn.createChannel();
  	const notification = new _notification(ch)
+ 	notification.setAdmin([{
+	 		driver: 'telegram',
+	 		recipient: '-1001423477185'
+	}])
  	try {
-	 	await notification.notify('NEW_DATA', 'telegram', 'YOUR_CHAT_ID', {
+	 	await notification.notify('NEW_DATA', 'telegram', notification.getAdmin('telegram'), {
 	 		content: 'somecontent',
 	 		timestamp: new Date
 	 	})
