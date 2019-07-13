@@ -16,10 +16,8 @@ class Notification {
 				var queue = this.queue
 			}
 			await this.ch.assertQueue(queue)
-			const timer = 5000
-			console.log(`Starting timer: ${timer}`)
+			const timer = 500
 			await delay(timer)
-			console.log('Finished timer.')
 			this.ch.sendToQueue(queue, Buffer.from(JSON.stringify(json)), {
 				contentType: 'application/json',
 				headers: {
