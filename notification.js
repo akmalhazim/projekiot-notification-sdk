@@ -15,7 +15,7 @@ class Notification {
 			} else {
 				var queue = this.queue
 			}
-			this.ch.assertQueue(queue)
+			await this.ch.assertQueue(queue)
 			this.ch.sendToQueue(queue, Buffer.from(JSON.stringify(json)), {
 				contentType: 'application/json',
 				headers: {
